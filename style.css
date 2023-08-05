@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    align-items: center;
+}
+header img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.listAndAdress{
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+}
+.display{
+    display: none;
+}
+.list{
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    position: absolute;
+   margin-top: 47px;
+   width: 250px;
+   left: 0;
+   flex-direction: column;
+   gap:20px;
+   z-index: 999;
+}
+.list ul{
+    width: 100%;
+
+}
+.list ul:first-child{
+    margin-top: 30px;
+}
+.list ul li i{
+    margin: 10px;
+}
+.list ul li{
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+.list ul li:hover,.fa-bars:hover{
+    background-color: rgb(61, 58, 58);
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.fa-bars{
+    position: absolute;
+ margin: 5px 20px 0px 5px;
+    font-size: 27px;
+    cursor: pointer;
+    padding: 7px;
+}
+.list hr{
+    width: 85%;
+    opacity: 0.7;
+    margin: 5px auto;
+    color: gray;
+    height: 0;
+}
+.address{
+    display: flex;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.address i{
+    color: red;
+}
+.address sup{
+    opacity: 0.7;
+}
+.searchandM{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+header .search{
+   width: 75%;
+}
+.search input{
+    width: 95%;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: relative;
+}
+.search .fa-magnifying-glass{
+    border: 1px solid gray;
+    border-left: 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: rgba(71, 69, 69, 0.623);
+    position: absolute;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    outline: 0;
+}
+.fa-microphone{
+    padding: 15px;
+    margin: 0 50px;
+    background-color: rgba(71, 69, 69, 0.623);
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 17px;
+}
+.search i:hover,.fa-microphone:hover,.lastDiv i:hover{
+    background-color: rgb(61, 58, 58);
+}
+.lastDiv{
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    gap:10px
+}
+.lastDiv i{
+    background-color: rgba(71, 69, 69, 0.623);
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 16px;
+    padding: 10px;
+}
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 10% 90%;
+}
+.leftDiv{
+    background-color: black;
+    color: white;
+    height: 100vh;
+   
+}
+.grid div ul li{
+   margin: 20px;
+   cursor: pointer;
+   padding: 7px;
+  text-align: center;
+  font-size: 14px;
+}
+.grid div ul li:hover{
+    background-color: rgb(61, 58, 58);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.grid ul li i{
+    font-size: 20px;
+    margin:10px
+}
+.rightDiv{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.rightDiv section{
+    width: 320px;
+    height: fit-content;
+    margin: 15px;
+}
+.rightDiv .content img{
+    width: 35px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+} 
+.rightDiv section .img{
+    background-image:url("OIP.jpeg");
+    height:200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    border-radius: 70px;
+    -webkit-border-radius: 70px;
+    -moz-border-radius: 70px;
+    -ms-border-radius: 70px;
+    -o-border-radius: 70px;
+}
+.rightDiv section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.rightDiv section .content{
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+.content span{
+    font-size: 20px;
+}
+.content h5,.content h4{
+opacity: 0.7;
+ margin-top: 3px;
+}
+@media(max-width:768px){
+    .grid{
+        grid-template-columns: 100%;
+    }
+    .grid .leftDiv{
+        display: none;
+    }
+    header .search input{
+        display: none;
+    }
+    .address h1{
+      font-size: 25px;
+    }
+    .search .fa-magnifying-glass{
+        position: unset;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+} 
+.searchandM{
+    width: 2%;
+}
+.fa-magnifying-glass{
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+.fa-microphone{
+    display: none;
+}
+header{
+    justify-content: center;
+    font-size: 18px;
+}
+.fa-bell{
+    display: none;
+}
+header i{
+    font-size: 14px;
+}
+.listAndAdress{
+    justify-content: space-between;
+    width: 55%;
+}
+.fa-bars{
+    font-size: 20px;
+}
+.address .fa-youtube{
+    font-size: 20px;
+}
+.lastDiv{
+    width: 25%;
+}
+.search{
+    width: 0;
+}
+}
